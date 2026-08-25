@@ -6,7 +6,7 @@ let sum = (a,b) =>{ // no need of the function keyword we can execute it directl
     return a+b;
 }
 
-// dry run 
+// dry run code
 //javascript creates a function and store it in the memory and 
 // assign it to the variable sum
 // now sum is pointing to the function in memory 
