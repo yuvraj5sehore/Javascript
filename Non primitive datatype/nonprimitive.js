@@ -5,3 +5,11 @@
 let obj = {};
 
 console.log(obj); // this will print empty {} which is called object 
+
+let obj2 = {
+    name: "yuvraj",
+    age: 12,
+};
+
+
+console.log(obj2.name);
