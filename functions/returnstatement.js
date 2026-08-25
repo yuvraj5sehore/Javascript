@@ -3,7 +3,7 @@
 
 function name(value){  //here function is a keyword in javascript used to make a function 
     //name is the name of the function 
-    // value is the parameter of the function which takes the value coming during the function call as an argument 
+    // value is the parameter of the function which takes the value coming during the function call with a argument 
     //{} code block where your function is written 
     return value + " hello";  // it is the return statement of the name function 
 
