@@ -13,3 +13,4 @@ let obj2 = {
 
 
 console.log(obj2.name);
+console.log(obj2.age);
