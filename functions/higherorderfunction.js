@@ -5,7 +5,7 @@
 // These function are very common in js Eg are Map , Filter, Reduce.
 
 
-function applyOperation(a,b, operation){
+function applyOperation(a,b, operation){  //function keyword is used to define/create a function.
     return operation(a,b); // returning a function which means it is satisfying the HOF second condition
 }
 
