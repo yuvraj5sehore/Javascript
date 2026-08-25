@@ -8,4 +8,12 @@ function name(value = "yuvraj"){
     
 }
 
-name();
+name();  //no argument is passed in the function name will use the default parameter as a argument
+ 
+
+function greet(name = "yuvraj"){
+   return "Hello " + name ;
+}
+
+
+console.log(greet("lakhan")); // when argument is passed your output will be different 
