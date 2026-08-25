@@ -22,7 +22,7 @@ console.log(greet());  // parentheses () acts as a invocation, call operator ,ex
 // console.log prints that hi there 
 
 
-console.log(greet); //  gives the function reference points to the function in the memory 
+console.log(greet); //  gives the function reference in the memory 
 // notice there are no parentheses () so the javascript does not run the function 
 // instead greet means give me the function that i am pointing to 
 
