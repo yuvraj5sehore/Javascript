@@ -2,12 +2,13 @@ Q.why javascript is called the interpreted language?
 
 JavaScript is an interpreted language. To understand this better, let's look at interpreters, compilers, and JIT (Just-In-Time) compilers:
 
-1. Interpreter: An interpreter runs instructions directly from the programming language without changing them into machine code first.
+1. Interpreter: interpreter is a type of translation software that directly executes programming source code line-by-line at runtime, rather than       converting   the entire program into an executable file beforehand
 2. Compiler: A compiler changes the entire program into object code (or binary code) and saves it. This code can then be run by the machine.
 3. JIT Compiler: A JIT compiler converts code into byte code first. Then, at runtime,
     it changes the byte code into machine-readable code, which makes the program run faster.
 
 ![alt text](image.png)
+![alt text](image-1.png)
 
 
 Q/How Code is Executed (The Compilation Phase) ?

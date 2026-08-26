@@ -1,0 +1,57 @@
+<!DOCTYPE html>  
+<!-- it tells the browser this document is written in HTML 5 tell the version of html -->
+<html lang="en">   
+    <!-- The lang="en" attribute declares English as the primary language of an HTML document. -->
+<head>     
+  <!-- The <head> tag in HTML is a container for metadata—machine-readable data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <!-- The  tag instructs mobile browsers to render a webpage matching 
+    the physical screen width of the device at a 1:1 scale. -->
+    <title>Document</title>      
+     <!--title of the page also appears at the tab of the browser                            -->
+    <style>  
+    /* The <style> tag in HTML is used to define internal Cascading Style Sheets (CSS) for a single webpage */
+
+    </style>
+</head>
+<body>
+    <!-- the main content of the webpage that the user can see and interact with  -->
+    <p id="ptag">I am a ptag</p> 
+    <!-- used to make a paragraph on your webpage -->
+    <img id="image" src="./download.jpg" alt=""> 
+    <!-- used to embed an image to your webpage -->
+
+
+    <script> // <script> tag allows embedding JavaScript directly in a page or linking to external files, enabling dynamic behavior, interactivity, 
+        const ptag = document.querySelector("#ptag");  //This code finds the first HTML element on your web page that has the ID ptag
+        // and stores it in a constant variable named ptag.
+        ptag.innerText = "I am changed through JS"; //The innerText property in JavaScript allows you to retrieve or update the visible text
+        // content of an HTML element and its descendants.
+        ptag.style.color = "red";
+        // ptag:- A variable that holds a reference to a specific HTML element selected via JavaScript (like document.getElementById("pTag")).
+        //.style: A property used to access the inline CSS styles of that element.
+        //.color = "red": Sets the text color property to red.
+
+        console.dir(ptag); //displays an interactive, expandable list of all JavaScript properties and methods attached 
+        // to the ptag object in the browser's developer console
+
+        const imageTag = document.querySelector("#image");
+        //
+        imageTag.addEventListener("click", changeImage);
+            let flag = true;
+            function changeImage(){
+                if(flag){
+                    imageTag.src = "./download (1).jpg"; 
+                }else{
+                    imageTag.src = "./download.jpg";
+                }
+                flag = !flag;
+            }
+
+            console.dir(imageTag)
+
+    </script>
+</body>
+
+</html>
