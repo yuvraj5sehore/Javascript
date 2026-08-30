@@ -1,4 +1,5 @@
 /*null :- null is a special value in js that represents the deliberate absence of any object to 
+// deliberate absence means a conscious and intentional decision 
 1) indicate no value
 2) reset or clear variable */
 
