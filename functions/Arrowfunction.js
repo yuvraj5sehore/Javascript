@@ -12,7 +12,7 @@ let sum = (a,b) =>{ // no need of the function keyword we can execute it directl
 // now sum is pointing to the function in memory 
 
 console.log(sum(3,4)); // sum is a variable name 
-// () means call invoke execute the function which sum is pointing to 
+// () means call invoke execute the function which sum is pointing to sum variable 
 // (3,4) send 3,4 as an argument to the function 
 
 // after calling the function 
