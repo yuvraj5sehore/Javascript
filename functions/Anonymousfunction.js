@@ -29,3 +29,12 @@ console.log(greet); //  gives the function reference in the memory
 // so the console.log() gets the function itself so the output looks like this 
 // [Function: greet]
 
+
+const greet1 = function(){
+    console.log(" you are very successful");
+}
+
+
+console.log(greet1());
+
+// output:- you are very successful or undefined bcz function is  not returning anything
