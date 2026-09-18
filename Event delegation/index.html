@@ -1,0 +1,67 @@
+
+
+<!-- Event bubbling example code  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grandParent{
+            height: 150px;
+            width: 150px;
+            background-color: yellow;
+            border: 1px solid black;
+        }
+
+        #parent{
+            height: 100px;
+            width: 100px;
+            background-color: grey;
+            border: 1px solid black;
+
+        }
+
+        #child{
+            height: 70px;
+            width: 70px;
+            background-color: red;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="grandParent">
+        <div id="parent">
+           <button id="child">Click Me!</button>
+        </div>
+    </div>
+
+    <script>
+        const grandParent = document.getElementById("grandParent");
+        const parent = document.getElementById("parent");
+        const child = document.getElementById("child");
+
+        console.dir(child);
+        console.dir(parent);
+        console.dir(grandParent);
+
+        child.addEventListener("click",function(){
+            child.style.backgroundColor = "orange";
+            
+        });
+
+        parent.addEventListener("click",function(){
+            parent.style.backgroundColor = "pink";
+            
+        })
+
+        grandParent.addEventListener("click",function(){
+            grandParent.style.backgroundColor = "green";
+        })
+    </script>
+</body>
+</html>

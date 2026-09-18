@@ -24,3 +24,7 @@ When you feed code to the engine, it goes through three major steps:
 3.Execution & Optimization: The engine starts running the bytecode while simultaneously monitoring it. 
   If a piece of code runs frequently, the JIT compiler compiles it directly into Machine Code 
   on the fly so it executes at lightning speed.
+
+Q.why console.dir() used in the javascript?
+Ans.The console.dir() method is used in JavaScript to display an interactive, hierarchical list
+of all the properties and methods of a specified object 
