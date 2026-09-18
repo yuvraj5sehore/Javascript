@@ -10,26 +10,24 @@ Q.why javascript is called the interpreted language?
 ![alt text](image.png)
 ![alt text](image-1.png)
 
-
 Q/How Code is Executed (The Compilation Phase) ?
 
-    While many call JavaScript an interpreted language,
-    modern engines use Just-In-Time (JIT) Compilation to make it incredibly fast. 
-    When you feed code to the engine, it goes through three major steps:
+      While many call JavaScript an interpreted language,
+      modern engines use Just-In-Time (JIT) Compilation to make it incredibly fast.
+      When you feed code to the engine, it goes through three major steps:
 
-  1.Parsing: The engine reads your code and parses it into a tree data structure called an Abstract Syntax Tree (AST).
+      1.Parsing: The engine reads your code and parses it into a tree data structure called an Abstract Syntax Tree (AST).
 
-  2.Compilation: The engine takes that tree and translates it into intermediate Bytecode.
+      2.Compilation: The engine takes that tree and translates it into intermediate Bytecode.
 
-   3.Execution & Optimization: The engine starts running the bytecode while simultaneously monitoring it. 
-    If a piece of code runs frequently, the JIT compiler compiles it directly into Machine Code 
-    on the fly so it executes at lightning speed.
+      3.Execution & Optimization: The engine starts running the bytecode while simultaneously monitoring it.
+      If a piece of code runs frequently, the JIT compiler compiles it directly into Machine Code
+      on the fly so it executes at lightning speed.ss
 
 Q.why console.dir() used in the javascript?
 
       Ans.The console.dir() method is used in JavaScript to display an interactive, hierarchical list
-      of all the properties and methods of a specified object 
-
+      of all the properties and methods of a specified object
 
 Q.why we write document.getElementById("Idname") ?
 
