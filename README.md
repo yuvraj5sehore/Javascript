@@ -29,3 +29,20 @@ Q.why console.dir() used in the javascript?
 
 Ans.The console.dir() method is used in JavaScript to display an interactive, hierarchical list
 of all the properties and methods of a specified object 
+
+
+Q.why we write document.getElementById("Idname") ?
+
+Ans.In JavaScript, we write document.getElementById("idname") to find and select a specific
+HTML element on a webpage so that we can interact with it or change it
+dynamically.
+
+document : This represents the entire webpage. It is the root object that contains all the
+HTML elements on your page
+
+.getElementById : This is a built-in JavaScript method (a function) that tells the
+browser to look through the document for an element with a matching ID.
+
+("idname") : This is the argument you pass to the function. It tells the browser the
+exact name of the ID you are searching for. IDs are case-sensitive and must be
+unique on a single webpage.
