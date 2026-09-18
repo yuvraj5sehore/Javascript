@@ -46,8 +46,10 @@ Q.why we write document.getElementById("Idname") ?
 
 Q.what is event delegation?
 
-      Ans.Event bubbling is a default mechanism in JavaScript where an event triggered on a nested child element propagates (or "bubbles") upward through its ancestor elements in the Document Object Model (DOM) tree.When an event like a click occurs, it does not just stay on the targeted element. Instead, the browser runs the event handlers in this specific order:
-      
+      Ans.Event bubbling is a default mechanism in JavaScript where an event triggered on a nested child element propagates
+      (or "bubbles") upward through its ancestor elements in the Document Object Model (DOM) tree.When an event
+      like a click occurs, it does not just stay on the targeted element. Instead, the browser runs the event handlers in this specific order:
+
       The innermost target element that was clicked.
       The target's immediate parent element.
       The next ancestor elements going up the tree (like <div> → <body> → <html> → window)
