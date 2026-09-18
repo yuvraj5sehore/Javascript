@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+//     let breadPromise = new Promise(function(resolve,reject){
+//     setTimeout(function(){
+//         if(false){
+//             resolve("bread is cutted");
+//         }else{
+//             reject("Error occured in bread cutting");
+//         }
+//     },2000);
+// })
+
+// console.log(breadPromise);
+
+
+    
+
+
+    function addStuffing(data){
+    return new Promise (function (resolve,reject){
+        setTimeout(function(){
+            if(data){
+                resolve("stuffing added");
+            }else{
+                reject("Reject of cutted the bread");
+            }
+        },2000);
+    });
+   }
+
+   function bake(data){
+    return new Promise (function (resolve,reject){
+        setTimeout(function(){
+            if(data){
+                resolve("Sandwich");
+            }else{
+                reject("Reject of cutted the bread");
+            }
+        },2000);
+    });
+   }
+
+   function cutTheBread(raw){
+    return new Promise (function (resolve,reject){
+        setTimeout(function(){
+            if(raw){
+                resolve("cutted Bread");
+            }else{
+                reject("Reject of cutted the bread");
+            }
+        },2000);
+    });
+   }
+   
+//    console.log("start");
+//    cutTheBread("Bread")
+//      .then(function(data){
+//         console.log(data);
+//         return addStuffing(data);
+//      })
+//      .then(function(data){
+//         console.log(data);
+//         return bake(data);
+//      })
+//      .then(function(data){
+//         console.log(data);
+//      })
+//      .catch(function(err){
+//         console.log("catch called",err);
+//      })
+//      console.log("End");
+
+  //Async and await are two keyboard which are used to resolve promises 
+
+  async function makeSandwich(){
+    let cuttedBread = await cutTheBread("raw");
+    console.log(cuttedBread);
+    let stuffed = await addStuffings(cuttedBread);
+    console.log(stuffed);
+    let sandwich = await bake(cuttedBread);
+    console.log(sandwich);
+  }
+
+  console.log("Start");
+  makeSandwich();
+  console.log("End");
+</script>
+</html>
