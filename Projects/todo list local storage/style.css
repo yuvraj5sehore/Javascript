@@ -39,7 +39,9 @@
   width: 100vw;
   display: flex;
   justify-content: center;
+   /* justify-content: center; distributes flex items in the center of the main axis,*/
   align-items: flex-start;
+   /* centers flex items along the cross axis. */
 }
 
 .task {
@@ -59,7 +61,7 @@
 }
 
 #editBtn{
-  
+   
 }
 
 #taskOptions {
