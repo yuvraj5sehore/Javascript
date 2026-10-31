@@ -1,0 +1,9 @@
+import React, {useState,useEffect,useRef} from "react";
+
+const App = () =>{
+  const[products, setProducts] = useState([]);
+  let timerId = useRef(null);
+  function onInputChange(event){
+    setQuery(event.target.value);
+  }
+}
